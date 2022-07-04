@@ -1,0 +1,1479 @@
+<html data-arp-injected="true">
+
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        html {
+            /* Copyright issue, ask Deidre to create a new one*/
+            background: linear-gradient( rgba(14, 92, 219, 0.7), rgba(155, 101, 34, 0.7)), url('https://thumbs.gfycat.com/ObviousLimpArgentinehornedfrog-size_restricted.gif');
+            background-size: cover;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+    <style id="plotly.js-style-global"></style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <style>
+        /* ! tailwindcss v3.1.3 | MIT License | https://tailwindcss.com */
+        
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+        
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+        
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+        }
+        
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+        
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+        
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+        
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+        
+        b,
+        strong {
+            font-weight: bolder
+        }
+        
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 1em
+        }
+        
+        small {
+            font-size: 80%
+        }
+        
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+        
+        sub {
+            bottom: -.25em
+        }
+        
+        sup {
+            top: -.5em
+        }
+        
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+        
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+        
+        button,
+        select {
+            text-transform: none
+        }
+        
+        [type=button],
+        [type=reset],
+        [type=submit],
+        button {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+        
+        :-moz-focusring {
+            outline: auto
+        }
+        
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+        
+        progress {
+            vertical-align: baseline
+        }
+        
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+        
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+        
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+        
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+        
+        summary {
+            display: list-item
+        }
+        
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+        
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+        
+        legend {
+            padding: 0
+        }
+        
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+        
+        textarea {
+            resize: vertical
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+        
+        [role=button],
+        button {
+            cursor: pointer
+        }
+        
+        :disabled {
+            cursor: default
+        }
+        
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+        
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+        
+        [type='text'],
+        [type='email'],
+        [type='url'],
+        [type='password'],
+        [type='number'],
+        [type='date'],
+        [type='datetime-local'],
+        [type='month'],
+        [type='search'],
+        [type='tel'],
+        [type='time'],
+        [type='week'],
+        [multiple],
+        textarea,
+        select {
+            -webkit-appearance: none;
+            appearance: none;
+            background-color: #fff;
+            border-color: #6b7280;
+            border-width: 1px;
+            border-radius: 0px;
+            padding-top: 0.5rem;
+            padding-right: 0.75rem;
+            padding-bottom: 0.5rem;
+            padding-left: 0.75rem;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            --tw-shadow: 0 0 #0000;
+        }
+        
+        [type='text']:focus,
+        [type='email']:focus,
+        [type='url']:focus,
+        [type='password']:focus,
+        [type='number']:focus,
+        [type='date']:focus,
+        [type='datetime-local']:focus,
+        [type='month']:focus,
+        [type='search']:focus,
+        [type='tel']:focus,
+        [type='time']:focus,
+        [type='week']:focus,
+        [multiple]:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            --tw-ring-inset: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: #2563eb;
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+            border-color: #2563eb
+        }
+        
+        input::placeholder,
+        textarea::placeholder {
+            color: #6b7280;
+            opacity: 1
+        }
+        
+        ::-webkit-datetime-edit-fields-wrapper {
+            padding: 0
+        }
+        
+        ::-webkit-date-and-time-value {
+            min-height: 1.5em
+        }
+        
+        ::-webkit-datetime-edit,
+        ::-webkit-datetime-edit-year-field,
+        ::-webkit-datetime-edit-month-field,
+        ::-webkit-datetime-edit-day-field,
+        ::-webkit-datetime-edit-hour-field,
+        ::-webkit-datetime-edit-minute-field,
+        ::-webkit-datetime-edit-second-field,
+        ::-webkit-datetime-edit-millisecond-field,
+        ::-webkit-datetime-edit-meridiem-field {
+            padding-top: 0;
+            padding-bottom: 0
+        }
+        
+        select {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+            background-position: right 0.5rem center;
+            background-repeat: no-repeat;
+            background-size: 1.5em 1.5em;
+            padding-right: 2.5rem;
+            print-color-adjust: exact
+        }
+        
+        [multiple] {
+            background-image: initial;
+            background-position: initial;
+            background-repeat: unset;
+            background-size: initial;
+            padding-right: 0.75rem;
+            print-color-adjust: unset
+        }
+        
+        [type='checkbox'],
+        [type='radio'] {
+            -webkit-appearance: none;
+            appearance: none;
+            padding: 0;
+            print-color-adjust: exact;
+            display: inline-block;
+            vertical-align: middle;
+            background-origin: border-box;
+            -webkit-user-select: none;
+            user-select: none;
+            flex-shrink: 0;
+            height: 1rem;
+            width: 1rem;
+            color: #2563eb;
+            background-color: #fff;
+            border-color: #6b7280;
+            border-width: 1px;
+            --tw-shadow: 0 0 #0000
+        }
+        
+        [type='checkbox'] {
+            border-radius: 0px
+        }
+        
+        [type='radio'] {
+            border-radius: 100%
+        }
+        
+        [type='checkbox']:focus,
+        [type='radio']:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            --tw-ring-inset: var(--tw-empty, /*!*/
+            /*!*/
+            );
+            --tw-ring-offset-width: 2px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: #2563eb;
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)
+        }
+        
+        [type='checkbox']:checked,
+        [type='radio']:checked {
+            border-color: transparent;
+            background-color: currentColor;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat
+        }
+        
+        [type='checkbox']:checked {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e")
+        }
+        
+        [type='radio']:checked {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e")
+        }
+        
+        [type='checkbox']:checked:hover,
+        [type='checkbox']:checked:focus,
+        [type='radio']:checked:hover,
+        [type='radio']:checked:focus {
+            border-color: transparent;
+            background-color: currentColor
+        }
+        
+        [type='checkbox']:indeterminate {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+            border-color: transparent;
+            background-color: currentColor;
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat
+        }
+        
+        [type='checkbox']:indeterminate:hover,
+        [type='checkbox']:indeterminate:focus {
+            border-color: transparent;
+            background-color: currentColor
+        }
+        
+        [type='file'] {
+            background: unset;
+            border-color: inherit;
+            border-width: 0;
+            border-radius: 0;
+            padding: 0;
+            font-size: unset;
+            line-height: inherit
+        }
+        
+        [type='file']:focus {
+            outline: 1px solid ButtonText;
+            outline: 1px auto -webkit-focus-ring-color
+        }
+        
+        *,
+         ::before,
+         ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+        
+        ::-webkit-backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+        
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia:
+        }
+        
+        .m-0 {
+            margin: 0px
+        }
+        
+        .m-8 {
+            margin: 2rem
+        }
+        
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+        
+        .my-8 {
+            margin-top: 2rem;
+            margin-bottom: 2rem
+        }
+        
+        .my-4 {
+            margin-top: 1rem;
+            margin-bottom: 1rem
+        }
+        
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+        
+        .mr-4 {
+            margin-right: 1rem
+        }
+        
+        .ml-1 {
+            margin-left: 0.25rem
+        }
+        
+        .mt-12 {
+            margin-top: 3rem
+        }
+        
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+        
+        .block {
+            display: block
+        }
+        
+        .flex {
+            display: flex
+        }
+        
+        .inline-flex {
+            display: inline-flex
+        }
+        
+        .hidden {
+            display: none
+        }
+        
+        .h-8 {
+            height: 2rem
+        }
+        
+        .h-full {
+            height: 100%
+        }
+        
+        .h-96 {
+            height: 24rem
+        }
+        
+        .w-full {
+            width: 100%
+        }
+        
+        .max-w-7xl {
+            max-width: 80rem
+        }
+        
+        .max-w-2xl {
+            max-width: 42rem
+        }
+        
+        .shrink {
+            flex-shrink: 1
+        }
+        
+        .grow {
+            flex-grow: 1
+        }
+        
+        .list-disc {
+            list-style-type: disc
+        }
+        
+        .flex-row {
+            flex-direction: row
+        }
+        
+        .flex-col {
+            flex-direction: column
+        }
+        
+        .content-center {
+            align-content: center
+        }
+        
+        .items-center {
+            align-items: center
+        }
+        
+        .justify-around {
+            justify-content: space-around
+        }
+        
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+        }
+        
+        .space-x-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1rem * var(--tw-space-x-reverse));
+            margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+        
+        .space-y-2> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.5rem * var(--tw-space-y-reverse))
+        }
+        
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+        
+        .rounded-md {
+            border-radius: 0.375rem
+        }
+        
+        .rounded-full {
+            border-radius: 9999px
+        }
+        
+        .border {
+            border-width: 1px
+        }
+        
+        .border-gray-300 {
+            --tw-border-opacity: 1;
+            border-color: rgb(209 213 219 / var(--tw-border-opacity))
+        }
+        
+        .border-transparent {
+            border-color: transparent
+        }
+        
+        .bg-transparent {
+            background-color: transparent
+        }
+        
+        .bg-black {
+            --tw-bg-opacity: 1;
+            background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+        }
+        
+        .bg-indigo-600 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(79 70 229 / var(--tw-bg-opacity))
+        }
+        
+        .p-0 {
+            padding: 0px
+        }
+        
+        .p-8 {
+            padding: 2rem
+        }
+        
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+        
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+        
+        .px-8 {
+            padding-left: 2rem;
+            padding-right: 2rem
+        }
+        
+        .pl-4 {
+            padding-left: 1rem
+        }
+        
+        .text-center {
+            text-align: center
+        }
+        
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+        
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+        
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+        
+        .text-lg {
+            font-size: 1.125rem;
+            line-height: 1.75rem
+        }
+        
+        .font-bold {
+            font-weight: 700
+        }
+        
+        .font-medium {
+            font-weight: 500
+        }
+        
+        .uppercase {
+            text-transform: uppercase
+        }
+        
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity))
+        }
+        
+        .text-indigo-800 {
+            --tw-text-opacity: 1;
+            color: rgb(55 48 163 / var(--tw-text-opacity))
+        }
+        
+        .text-blue-300 {
+            --tw-text-opacity: 1;
+            color: rgb(147 197 253 / var(--tw-text-opacity))
+        }
+        
+        .opacity-80 {
+            opacity: 0.8
+        }
+        
+        .shadow-sm {
+            --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+        
+        .hover\:bg-indigo-700:hover {
+            --tw-bg-opacity: 1;
+            background-color: rgb(67 56 202 / var(--tw-bg-opacity))
+        }
+        
+        .hover\:underline:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline
+        }
+        
+        .focus\:border-indigo-500:focus {
+            --tw-border-opacity: 1;
+            border-color: rgb(99 102 241 / var(--tw-border-opacity))
+        }
+        
+        .focus\:outline-none:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px
+        }
+        
+        .focus\:ring-2:focus {
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)
+        }
+        
+        .focus\:ring-indigo-500:focus {
+            --tw-ring-opacity: 1;
+            --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity))
+        }
+        
+        .focus\:ring-offset-2:focus {
+            --tw-ring-offset-width: 2px
+        }
+        
+        @media (min-width: 640px) {
+            .sm\:text-sm {
+                font-size: 0.875rem;
+                line-height: 1.25rem
+            }
+        }
+    </style>
+</head>
+
+<body class="p-0 m-0 bg-transparent" data-new-gr-c-s-check-loaded="14.1063.0" data-gr-ext-installed="">
+    <img class="h-8 m-8" src="https://raw.githubusercontent.com/wuzhong-zhu/resources/main/chainstack-white.svg">
+    <div id="start_page" class="p-8 m-8 bg-black text-white rounded-lg opacity-80 max-w-7xl mx-auto">
+        <h1 class="text-3xl font-bold my-8">EVM node performance insider</h1>
+        <div class="space-y-4 flex flex-col mb-4 max-w-2xl">
+            <div class="flex flex-row align-midle space-x-4">
+                <p><span class="mr-4">The node endpoint is:</span>
+
+                    <input checked="" class="url_rb" type="radio" name="url_type" value="ws">
+                    <label class="mr-4 ml-1">WebSocket</label>
+                    <input class="url_rb" type="radio" name="url_type" value="https">
+                    <label class="ml-1">HTTP</label>
+                </p>
+            </div>
+            <input type="text" placeholder="wss://your-node-wss-endpoint/*****" id="url" class="shadow-sm text-indigo-800 focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md">
+            <p></p>
+        </div>
+
+        <button id="start_button" class="uppercase inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-full shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+          🚀 Start test
+        </button>
+        <div class="space-y-4 mt-12">
+            <p class="text-xl font-bold">👀 Notes</p>
+            <ul class="space-y-2 list-disc pl-4">
+                <li>Works only on EVM.</li>
+                <li>Transaction analysis only on WS endpoints.</li>
+                <li>
+                    If TxPool analysis doesn't work, that is probably because your node provider closed the RPC endpoint.
+                </li>
+                <li>
+                    If network analysis stops working, that is probably because your node provider limits request rate.
+                </li>
+            </ul>
+
+            <hr>
+            <p>
+                <a href="https://chainstack.com/" class="hover:underline text-blue-300">Chainstack</a> free RPC endpoint doesn't set request limit.
+            </p>
+            <p>
+                <a href="https://chainstack.com/" class="hover:underline text-blue-300">Chainstack</a> dedicated node gives you full access to all namespaces necessary for this tool.
+            </p>
+        </div>
+    </div>
+    <div id="node_page" class="hidden p-8 bg-black text-white rounded-lg h-full opacity-80 max-w-7xl mx-auto">
+        <button class="hover:underline my-8" onclick="backToMain()">
+          ⬅️ Go back
+        </button>
+        <h1 class="text-3xl font-bold mb-8 text-center">EVM node performance insider</h1>
+
+        <div class="flex flex-row justify-around mb-8">
+            <div class="text-center">
+                <p class="text-lg font-bold">Chain ID</p>
+                <p id="node-1-1">Waiting for response</p>
+            </div>
+            <div class="text-center">
+                <p class="text-lg font-bold">Is synced</p>
+                <h4 id="node-1-2">Waiting for response</h4>
+            </div>
+            <div class="text-center">
+                <p class="text-lg font-bold">Current block number</p>
+                <h4 id="node-1-3">Waiting for response</h4>
+            </div>
+            <div class="text-center">
+                <p class="text-lg font-bold">Is miner</p>
+                <h4 id="node-1-4">Waiting for response</h4>
+            </div>
+            <div class="text-center">
+                <p class="text-lg font-bold">Hash rate</p>
+                <h4 id="node-1-5">Waiting for response</h4>
+            </div>
+            <div class="text-center">
+                <p class="text-lg font-bold">Peer count</p>
+                <h4 id="node-1-6">Waiting for response</h4>
+            </div>
+        </div>
+        <div class="flex flex-row justify-around content-center mb-8 px-8">
+            <div class="text-center shrink">
+                <p class="text-lg font-bold">Average network latency</p>
+                <p class="text-xl font-bold mb-8" id="node-2-2">
+                    Waiting for response
+                </p>
+                <p class="text-lg font-bold">Instantaneous latency</p>
+                <p class="text-xl font-bold" id="node-2-1">Waiting for response</p>
+            </div>
+            <div class="h-96 grow" id="graph1"></div>
+        </div>
+        <div class="flex flex-row justify-around mb-8">
+            <div class="flex flex-col space-y-2">
+                <p class="text-lg font-bold">
+                    Average transactions received per second
+                </p>
+                <h1 id="node-2-3">Waiting for response</h1>
+                <p class="text-lg font-bold">Instantaneous transactions/s</p>
+                <p id="node-2-4">Waiting for response</p>
+            </div>
+            <div class="flex flex-col space-y-2">
+                <p class="text-lg font-bold">Average gas received per second</p>
+                <h2 id="node-2-5">Waiting for response</h2>
+                <p class="text-lg font-bold">Average value received per second</p>
+                <h2 id="node-2-6">Waiting for response</h2>
+            </div>
+            <div class="flex flex-col text-center" id="bottom-left-div">
+                <div class="flex flex-row justify-around">
+                    <div class="">
+                        <p class="text-lg font-bold">TxValue in TxPool</p>
+                        <h2 id="node-3-1">Waiting for response</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-lg font-bold">Since last block updated</p>
+                        <h2 id="node-3-3">Waiting for response</h2>
+                    </div>
+                </div>
+                <div class="flex flex-row my-4">
+                    <div class="">
+                        <p class="text-lg font-bold">Gas in TxPool</p>
+                        <h2 id="node-3-2">Waiting for response</h2>
+                    </div>
+                    <div class="">
+                        <p class="text-lg font-bold">Block update latency</p>
+                        <h2 id="node-3-4">Waiting for response</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
+
+
+    <script>
+        var web3
+            // var web3 = new Web3(new Web3.providers.WebsocketProvider(""), {
+            //     clientConfig: {
+            //         maxReceivedFrameSize: 10000000, //needed because txpool_content call returns a lot of data
+            //         maxReceivedMessageSize: 10000000
+            //     }
+            // });
+        var stopTime = 20000
+        var url_type = 'ws'
+        var interval
+
+        // start()
+
+        function start() {
+            console.log('start')
+            $('#start_page').hide()
+            $('#node_page').show()
+
+            showStaticInfo()
+            speedTest()
+            txInfoGet()
+            txPoolGet()
+            blockInfoGet()
+                // recursive call: includes: txpoll stats, block update state and transaction subscription stats
+            interval = setInterval(recurInfoUpdate, 1000)
+
+            setTimeout(stop, stopTime)
+        }
+
+        function backToMain() {
+            stop()
+            $('#node_page').hide()
+            $('#start_page').show()
+        }
+
+        function stop() {
+            console.log('stop!')
+            clearInterval(interval)
+            stopSpeedTest()
+            stopTxPool()
+            web3.eth.clearSubscriptions()
+            console.log(latencyArr)
+        }
+
+        function showStaticInfo() {
+            web3.eth
+                .getChainId()
+                .then(function(value) {
+                    console.log(value)
+                    $('#node-1-1').text(value)
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-1-1').text('Not supported by endpoint')
+                })
+
+            web3.eth
+                .isSyncing()
+                .then(function(value) {
+                    console.log(value)
+                    if (value == false) $('#node-1-2').text('True')
+                    else $('#node-1-2').text('False')
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-1-2').text('Not supported by endpoint')
+                })
+
+            web3.eth
+                .getBlockNumber()
+                .then(function(value) {
+                    $('#node-1-3').text(value)
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-1-3').text('Not supported by endpoint')
+                })
+
+            web3.eth
+                .isMining()
+                .then(function(value) {
+                    $('#node-1-4').text(value)
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-1-4').text('Not supported by endpoint')
+                })
+
+            web3.eth
+                .getHashrate()
+                .then(function(value) {
+                    $('#node-1-5').text(value)
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-1-5').text('Not supported by endpoint')
+                })
+
+            web3.eth.net
+                .getPeerCount()
+                .then(function(value) {
+                    $('#node-1-6').text(value)
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-1-6').text('Not supported by endpoint')
+                })
+        }
+
+        // recursive calls
+        function recurInfoUpdate() {
+            // Update Tx Info
+            txUpdate()
+            txPoolUpdate()
+            blockInfoUpdate()
+            speedTestUpdate()
+        }
+
+        // network speed test
+        var rounds = 0
+        var avgSpeed = 0
+        var stopSpeedTestFlag = false
+        var latencyArr = []
+
+        function speedTest() {
+            stopSpeedTestFlag = false
+            tempTime = new Date()
+            web3.eth.getChainId().then(function(value) {
+                var questTime = new Date() - tempTime
+                $('#node-2-1').text(questTime + ' ms')
+                totalSpeed = avgSpeed * rounds + questTime
+                rounds++
+                avgSpeed = Number.parseInt(totalSpeed / rounds)
+                latencyArr[rounds] = questTime
+                if (!stopSpeedTestFlag) speedTest()
+            })
+        }
+
+        function speedTestUpdate() {
+            $('#node-2-2').text(avgSpeed + ' ms')
+            var tempArr
+            var tempX = [0]
+
+            if (rounds < 150) {
+                tempArr = latencyArr
+                for (i = 0; i < rounds; i++) {
+                    tempX[i] = i
+                }
+            } else {
+                tempArr = latencyArr.slice(rounds - 150, rounds)
+                for (i = 0; i < rounds; i++) {
+                    tempX[i] = rounds - 150 + i
+                }
+            }
+
+            var trace1 = {
+                y: tempArr,
+                x: tempX,
+                mode: 'line',
+            }
+            var data = [trace1]
+
+            var layout = {
+                title: 'Network latency',
+                yaxis: {
+                    range: [0, 1000],
+                },
+                paper_bgcolor: 'rgba(255,255,255,0)',
+                plot_bgcolor: 'rgba(0,0,0,0)',
+            }
+
+            Plotly.newPlot('graph1', data, layout)
+        }
+
+        function stopSpeedTest() {
+            stopSpeedTestFlag = true
+        }
+
+        // transaction stats reporting
+        var txSubscription
+        var txRound = 0
+        var secondsPassed = 0
+        var totalTxCount = 0
+        var tempTxCount = 0
+        var maxTxPerSecond = 0
+        var totalTxCount2 = 0
+        var avgTxGasPrice = 0
+        var avgTxValue = 0
+
+        function txInfoGet() {
+            if (url_type == 'https') {
+                $('#node-2-3').text('Not supported by endpoint')
+                return
+            } else
+                try {
+                    console.log('start')
+                    txSubscription = web3.eth
+                        .subscribe('pendingTransactions')
+                        .on('data', function(txHash) {
+                            web3.eth.getTransaction(txHash).then(function(tx) {
+                                try {
+                                    if (tx != null) {
+                                        var gas =
+                                            Number(web3.utils.fromWei(tx['gasPrice'], 'ether')) *
+                                            Number(web3.utils.hexToNumberString(tx['gas']))
+                                        var value = Number(web3.utils.fromWei(tx['value'], 'ether'))
+
+                                        var totalTxGas = avgTxGasPrice * totalTxCount2 + gas
+                                        var totalTxVal = avgTxValue * totalTxCount2 + value
+                                        totalTxCount2++
+                                        avgTxGasPrice = totalTxGas / totalTxCount2
+                                        avgTxValue = totalTxVal / totalTxCount2
+
+                                        // console.log(avgTxGasPrice)
+                                        // console.log(avgTxValue)
+                                    }
+                                } catch (e) {
+                                    console.log(e)
+                                }
+                            })
+                            totalTxCount++
+                        })
+                } catch (e) {
+                    $('#node-2-3').text('Not supported by endpoint')
+                    console.log(e)
+                }
+        }
+
+        function txUpdate() {
+            if (totalTxCount < Number.MAX_SAFE_INTEGER - 1000) {
+                // if (totalTxCount < (Number.MAX_SAFE_INTEGER - 1000) && totalTxCount < 1000) {
+                secondsPassed++
+                txPerSecond = totalTxCount - tempTxCount
+                avgTxPerSecond = (totalTxCount / secondsPassed).toFixed(3)
+                if (txPerSecond > maxTxPerSecond) maxTxPerSecond = txPerSecond
+                $('#node-2-3').text(avgTxPerSecond)
+                $('#node-2-4').text(txPerSecond)
+                $('#node-2-5').text((avgTxPerSecond * avgTxGasPrice).toFixed(10) + ' eth')
+                $('#node-2-6').text((avgTxPerSecond * avgTxValue).toFixed(10) + ' eth')
+                tempTxCount = totalTxCount
+            } else {
+                txSubscription.unsubscribe(function(error, success) {
+                    console.log('reaching max count! Abort!!!')
+                    if (success) console.log('Successfully unsubscribed!')
+                })
+                clearInterval(t)
+            }
+        }
+
+        // txpool stats reporting
+        var txPool
+        var txPoolStopFlag = false
+
+        function txPoolGet() {
+            web3.extend({
+                property: 'txpool',
+                methods: [{
+                    name: 'getTxPoolContent',
+                    call: 'txpool_content',
+                }, ],
+            })
+            web3.txpool
+                .getTxPoolContent()
+                .then(function(data) {
+                    txPool = data
+                        // console.log(txPool)
+                    if (!txPoolStopFlag) setTimeout(txPoolGet, 1000)
+                })
+                .catch(function(e) {
+                    console.log(e)
+                    $('#node-3-1').text('Not supported by endpoint')
+                    $('#node-3-2').text('Not supported by endpoint')
+                })
+        }
+
+        function txPoolUpdate() {
+            if (txPool) {
+                util = web3.utils
+                tempCount = 0
+                tempGasSum = 0
+                tempValue = 0
+                for (var a in txPool.pending) {
+                    for (var b in txPool.pending[a]) {
+                        // console.log(txPool.pending[a][b])
+                        gas = Number(util.hexToNumberString(txPool.pending[a][b].gas))
+                        gasPrice = Number(
+                            util.fromWei(
+                                util.hexToNumberString(txPool.pending[a][b].gasPrice),
+                                'ether'
+                            )
+                        )
+                        value = Number(
+                            util.fromWei(
+                                util.hexToNumberString(txPool.pending[a][b].value),
+                                'ether'
+                            )
+                        )
+                        tempTotalGasPrice = gas * gasPrice
+                        tempGasSum += tempTotalGasPrice
+                        tempValue += value
+                        tempCount++
+                    }
+                }
+                $('#node-3-1').text(tempValue.toFixed(5) + ' eth')
+                $('#node-3-2').text(tempGasSum.toFixed(5) + ' eth')
+            }
+        }
+
+        function stopTxPool() {
+            txPoolStopFlag = true
+        }
+        // block stats reporting
+        var blockSubscription
+        var updateTime
+        var updateBlockInfo
+        var blockUpdateLatency
+
+        function blockInfoGet() {
+            if (url_type == 'https') {
+                $('#node-3-3').text('Not supported by endpoint')
+                $('#node-3-4').text('Not supported by endpoint')
+                return
+            } else
+                try {
+                    console.log('start block subscription')
+                    blockSubscription = web3.eth
+                        .subscribe('newBlockHeaders')
+                        .on('data', function(blockHeader) {
+                            updateTime = new Date()
+                            updateBlockInfo = blockHeader
+                            blockUpdateLatency =
+                                updateTime - new Date(parseInt(updateBlockInfo.timestamp) * 1000)
+                                // console.log(blockHeader)
+                                // console.log(updateTime)
+                                // console.log(new Date(parseInt(updateBlockInfo.timestamp)))
+                                // console.log(blockUpdateLatency)
+                        })
+                } catch (e) {
+                    $('#node-3-3').text('Unable to fetch result')
+                    $('#node-3-4').text('Unable to fetch result')
+                    console.log(e)
+                }
+        }
+
+        function blockInfoUpdate() {
+            if (updateTime && blockUpdateLatency) {
+                var tempDelay = (new Date() - updateTime) / 1000
+                    // console.log(blockUpdateLatency)
+                $('#node-3-3').text(tempDelay + ' s')
+                $('#node-3-4').text(blockUpdateLatency + ' ms')
+            }
+        }
+
+        // init function, calls when page is loaded
+        $(document).ready(function() {
+            $('#start_page').show()
+                // $('#node_page').show()
+
+            $('.url_rb').change(function() {
+                url_type = this.value
+                $('#url').val('')
+                if (this.value == 'ws') {
+                    url_type = 'ws'
+                    $('#url').attr('placeholder', 'wss://your-node-wss-endpoint/*****')
+                } else if (this.value == 'https') {
+                    url_type = 'https'
+                    $('#url').attr('placeholder', 'http://your-node-https-endpoint/*****')
+                }
+            })
+
+            $('#start_button').click(function() {
+                console.log('Starting....')
+                url = document.getElementById('url').value
+                if (url == '') {
+                    alert('Please enter a node url (wss or https)')
+                    return
+                }
+                if (url_type == 'ws' && url.startsWith('http')) {
+                    alert('Please enter a websocket endpoint.')
+                    return
+                }
+                if (url_type == 'https' && url.startsWith('wss')) {
+                    alert('Please enter a http endpoint.')
+                    return
+                }
+
+                try {
+                    if (url_type == 'ws')
+                        web3 = new Web3(new Web3.providers.WebsocketProvider(url), {
+                            clientConfig: {
+                                maxReceivedFrameSize: 10000000, //needed because txpool_content call returns a lot of data
+                                maxReceivedMessageSize: 10000000,
+                            },
+                        })
+                    else
+                        web3 = new Web3(new Web3.providers.HttpProvider(url), {
+                            clientConfig: {
+                                maxReceivedFrameSize: 10000000, //needed because txpool_content call returns a lot of data
+                                maxReceivedMessageSize: 10000000,
+                            },
+                        })
+
+                    web3.eth.getChainId().then(function(value) {
+                        console.log('web3 connected with chain ID: ' + value)
+                        start()
+                    })
+                } catch (error) {
+                    console.log(error)
+                }
+            })
+        })
+    </script>
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
