@@ -7,6 +7,6 @@ node -v
 
 Run
 ```
-npm install web3
+npm install
 node test "name of your end point"
 ```
