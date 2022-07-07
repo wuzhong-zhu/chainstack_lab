@@ -1,4 +1,4 @@
-# how to use
+## how to use
 
 Make sure nodejs is installed by typing
 `node -v`
