@@ -1,4 +1,3 @@
-//node test https://nd-027-410-462.p2pify.com/b565ce8d833e7cc5503e74c9789e3e6e
 var endpoint = process.argv[2]
 var Web3 = require('web3');
 var web3 = new Web3(new Web3.providers.HttpProvider(endpoint));
