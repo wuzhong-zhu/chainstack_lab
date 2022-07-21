@@ -24,7 +24,7 @@ function speedTest() {
             method: "eth_blockNumber",
             params: [],
         }),
-    }).getBlockNumber().then(function(value) {
+    }).then(function(value) {
         var questTime = (getNanoSecTime() - tempTime) / 1000000
         rounds++
         console.log(questTime.toFixed(2) + " ms")
